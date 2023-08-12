@@ -1,0 +1,5 @@
+Andar Bahar web Game 
+1)Set Cron job to run  from every  2 min.(Cron Controller/cards)
+wget -O /dev/null http://bazarsatta.in/admin/backend/Cron/cards
+2) )Set Cron job to run  from every  1hour.(Cron Controller/index)
+wget -O /dev/null http://bazarsatta.in/admin/backend/Cron/index 

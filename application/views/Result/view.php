@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body table-responsive">
+                <!--<ul class="nav nav-tabs">-->
+                <!--    <li class="active"><a data-toggle="tab" href="#wins">Wins</a></li>-->
+                    <!--<li><a data-toggle="tab" href="#purchase">Purchase</a></li>-->
+                    <!--<li><a data-toggle="tab" href="#reffer">Reffer Earn</a></li>-->
+                    <!--<li><a data-toggle="tab" href="#purchase_reffer">Purchase Reffer</a></li>-->
+                    <!--<li><a data-toggle="tab" href="#welcome_reffer">Welcome Reffer</a></li>-->
+                <!--    <li><a data-toggle="tab" href="#wallet_log">Wallet Log</a></li>-->
+                <!--</ul>-->
+                <div class="tab-content">
+                    <br>
+                    <div id="wins" class="tab-pane fade in active">
+                        <table class="table table-bordered dt-responsive nowrap"
+                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Sr. No.</th>
+                                    <th>User Id</th>
+                                    <th>Amount</th>
+                                    <th>Card</th>
+                                    <!--<th>Added Date</th>-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--<pre><?php var_dump($results);?></pre>-->
+                                <?php
+                                $i = 0;
+                               
+                                foreach ($results as $key => $result) {
+                                    $i++;
+                                ?>
+                                <tr>
+                                    <td><?= $i ?></td>
+                                    <td><?= $result->user_id ?></td>
+                                    <td><?= $result->card ?></td>
+                                    <td><?= $result->amount ?></td>
+                                    <!--<td><?= date("d-m-Y", strtotime($result->added_date)) ?></td>-->
+                                </tr>
+                                <?php }
+                                ?>
+
+
+                            </tbody>
+                        </table>
+     </div>
+                    <div id="wallet_log" class="tab-pane fade">
+                        <table class="table table-bordered dt-responsive nowrap"
+                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Sr. No.</th>
+                                    <th>Amount</th>
+                                    <!--<th>Bonus</th>-->
+                                    <th>Added Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $i = 0;
+                                foreach ($AllWalletLog as $key => $WalletLog) {
+                                    $i++;
+                                ?>
+                                <tr>
+                                    <td><?= $i ?></td>
+                                    <td><?= $WalletLog->coin?></td>
+                                    <!--<td><?= ($WalletLog->bonus)?'Yes':'No'; ?></td>-->
+                                    <td><?= date("d-m-Y H:i:s", strtotime($WalletLog->added_date)) ?></td>
+                                </tr>
+                                <?php }
+                                ?>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.table').dataTable({
+        dom: 'Bfrtip',
+        "buttons": [
+            'excel','pdf','print'
+        ]
+    });
+})
+</script>

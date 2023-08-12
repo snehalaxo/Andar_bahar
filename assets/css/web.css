@@ -1,0 +1,108 @@
+         .card
+         {
+         height:110px;
+         width:80px;
+         margin:20px 1px 20px 1px;
+         }
+         body {
+         background: url('http://bazarsatta.in/admin/data/background/bg1.jpg');
+         }
+         h2
+         {
+         color:white; 
+         }
+         .static_card
+         {
+         height:150px;
+         width:100px;
+         margin-left:0.5%;
+         }
+         .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #f1b84fd4;
+         color: white;
+         text-align: center;
+         }
+         a{
+         color:white;
+         }
+         .timer {
+         margin: 20px 0px 0px 20px;
+         padding: 0px 50px 0px 50px;
+         /*display: block;*/
+         max-width: 300px;
+         /*width: auto;*/
+         text-align: center;
+         /*background-color: #fff;*/
+         background: linear-gradient(to bottom left, #ff9933 0%, #ff3300 132%);
+         border-radius: 6px;
+         /*box-shadow: 0 10px 10px -5px #909090;*/
+         /*position: absolute;*/
+         /*top: 50%;*/
+         /*left: 50%;*/
+         /*transform: translate(-50%, -50%);*/
+         }
+         .time {
+         margin: 30px auto;
+         padding: 0px 5px 0px 5px;
+         /*display: block;*/
+         max-width: 300px;
+         width: auto;
+         text-align: center;
+         background-color: #fff;
+         border-radius: 6px;
+         box-shadow: 0 10px 10px -5px #909090;
+         /*position: absolute;*/
+         /*top: 50%;*/
+         /*left: 50%;*/
+         /*transform: translate(-50%, -50%);*/
+         }
+         .tim {
+         margin: 20px 150px 0px 150px;
+         padding: 0px 70px 0px 70px;
+         /*display: block;*/
+         max-width: 500px;
+         width: 500px;
+         text-align: center;
+         /*background-color: #fff;*/
+         background: linear-gradient(to bottom left, #ff9933 0%, #ff3300 132%);
+         border-radius: 6px;
+         /*box-shadow: 0 10px 10px -5px #909090;*/
+         /*position: absolute;*/
+         /*top: 50%;*/
+         /*left: 50%;*/
+         /*transform: translate(-50%, -50%);*/
+         }
+         .timer1 {
+         margin: 30px 20px auto;
+         padding: 0px 5px 0px 5px;
+         /*display: block;*/
+         max-width: 300px;
+         width: auto;
+         text-align: center;
+         background-color: #fff;
+         border-radius: 6px;
+         /*box-shadow: 0 10px 10px -5px #909090;*/
+         /*position: absolute;*/
+         /*top: 50%;*/
+         /*left: 50%;*/
+         /*transform: translate(-50%, -50%);*/
+         }
+         #count,#countdown,#countdown1,#autodiv,#demo {
+         font-size: 30px;
+         }
+         .navcontent
+         {
+         margin-left: 15px; 
+         margin-top: 40px; 
+         font-size: 24px; 
+         }
+         .nav_content
+         {
+         margin-left: 0px; 
+         margin-top: 40px; 
+         font-size: 24px; 
+         }
